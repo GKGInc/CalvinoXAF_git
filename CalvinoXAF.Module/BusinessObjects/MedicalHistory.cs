@@ -73,7 +73,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<bool>(nameof(Filler), ref _Filler, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

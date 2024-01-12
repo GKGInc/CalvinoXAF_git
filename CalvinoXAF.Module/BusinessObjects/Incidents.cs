@@ -54,7 +54,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<int>(nameof(IncidentKey), ref _IncidentKey, value); }
         }
 
-        public DateTime _IncidentDate;
+        private DateTime _IncidentDate;
         public DateTime IncidentDate
         {
             get { return _IncidentDate; }
@@ -106,7 +106,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(CloseCaseno), ref _CloseCaseno, value); }
         }
 
-        public DateTime _CloseDate;
+        private DateTime _CloseDate;
         public DateTime CloseDate
         {
             get { return _CloseDate; }

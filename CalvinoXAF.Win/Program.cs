@@ -33,20 +33,35 @@ namespace CalvinoXAF.Win {
             }
             Tracing.Initialize();
             CalvinoXAFWindowsFormsApplication winApplication = new CalvinoXAFWindowsFormsApplication();
-            SecurityAdapterHelper.Enable();
-			try {
-                string connectionString = "net.tcp://127.0.0.1:54922/DataServer";
-                WcfSecuredClient wcfSecuredClient = new WcfSecuredClient(WcfDataServerHelper.CreateNetTcpBinding(), new EndpointAddress(connectionString));
-                MiddleTierClientSecurity security = new MiddleTierClientSecurity(wcfSecuredClient);
-                security.IsSupportChangePassword = true;
-                winApplication.Security = security;
-                winApplication.CreateCustomObjectSpaceProvider += (s, e) => {
-                    e.ObjectSpaceProviders.Add(new MiddleTierServerObjectSpaceProvider(wcfSecuredClient));
-                    e.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(winApplication.TypesInfo, null));
-                };
+            //winApplication.GetSecurityStrategy().RegisterXPOAdapterProviders();
+            //SecurityAdapterHelper.Enable();
+
+            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            {
+                winApplication.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            }
+#if DEBUG
+            if (System.Diagnostics.Debugger.IsAttached && winApplication.CheckCompatibilityType == CheckCompatibilityType.DatabaseSchema)
+            {
+                winApplication.DatabaseUpdateMode = DatabaseUpdateMode.UpdateDatabaseAlways;
+            }
+#endif
+            try
+            {
+                ////string connectionString = "net.tcp://127.0.0.1:54922/DataServer";
+                //WcfSecuredClient wcfSecuredClient = new WcfSecuredClient(WcfDataServerHelper.CreateNetTcpBinding(), new EndpointAddress(winApplication.ConnectionString));
+                //MiddleTierClientSecurity security = new MiddleTierClientSecurity(wcfSecuredClient);
+                //security.IsSupportChangePassword = true;
+                //winApplication.Security = security;
+                //winApplication.CreateCustomObjectSpaceProvider += (s, e) =>
+                //{
+                //    e.ObjectSpaceProviders.Add(new MiddleTierServerObjectSpaceProvider(wcfSecuredClient));
+                //    e.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(winApplication.TypesInfo, null));
+                //};
+
                 winApplication.Setup();
                 winApplication.Start();
-                wcfSecuredClient.Dispose();
+                //wcfSecuredClient.Dispose();
             }
             catch(Exception e) {
                 winApplication.StopSplash();

@@ -79,7 +79,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(ProvName), ref _ProvName, value); }
         }
 
-        public DateTime _ProvDate;
+        private DateTime _ProvDate;
         public DateTime ProvDate
         {
             get { return _ProvDate; }
@@ -94,7 +94,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(ProvDescription), ref _ProvDescription, value); }
         }
 
-        public DateTime _ProvEDate;
+        private DateTime _ProvEDate;
         public DateTime ProvEDate
         {
             get { return _ProvEDate; }
@@ -123,7 +123,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(TypeService), ref _TypeService, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

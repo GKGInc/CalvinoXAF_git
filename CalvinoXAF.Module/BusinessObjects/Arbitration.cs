@@ -67,14 +67,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(ReferenceBy), ref _ReferenceBy, value); }
         }
 
-        public DateTime _IntakeDate;
+        private DateTime _IntakeDate;
         public DateTime IntakeDate
         {
             get { return _IntakeDate; }
             set { SetPropertyValue<DateTime>(nameof(IntakeDate), ref _IntakeDate, value); }
         }
 
-        public DateTime _DOI;
+        private DateTime _DOI;
         public DateTime DOI
         {
             get { return _DOI; }
@@ -112,7 +112,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(CaseNo), ref _CaseNo, value); }
         }
 
-        public DateTime _ClosedDate;
+        private DateTime _ClosedDate;
         public DateTime ClosedDate
         {
             get { return _ClosedDate; }
@@ -157,14 +157,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Evaluation), ref _Evaluation, value); }
         }
 
-        public DateTime _DateScheduled;
+        private DateTime _DateScheduled;
         public DateTime DateScheduled
         {
             get { return _DateScheduled; }
             set { SetPropertyValue<DateTime>(nameof(DateScheduled), ref _DateScheduled, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

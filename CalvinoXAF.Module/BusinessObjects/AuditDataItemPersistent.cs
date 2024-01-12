@@ -49,7 +49,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(UserName), ref _UserName, value); }
         }
 
-        public DateTime _ModifiedOn;
+        private DateTime _ModifiedOn;
         public DateTime ModifiedOn
         {
             get { return _ModifiedOn; }

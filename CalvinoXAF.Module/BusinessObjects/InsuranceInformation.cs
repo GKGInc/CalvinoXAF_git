@@ -322,7 +322,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(AdjustmentEmail), ref _AdjustmentEmail, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

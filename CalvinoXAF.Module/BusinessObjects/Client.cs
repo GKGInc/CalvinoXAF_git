@@ -141,7 +141,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(SSN), ref _SSN, value); }
         }
 
-        public DateTime _DOB;
+        private DateTime _DOB;
         public DateTime DOB
         {
             get { return _DOB; }

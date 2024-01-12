@@ -54,7 +54,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(SSN), ref _SSN, value); }
         }
 
-        public DateTime _Date;
+        private DateTime _Date;
         public DateTime Date
         {
             get { return _Date; }
@@ -114,7 +114,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Action), ref _Action, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

@@ -86,7 +86,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(AdvPar2), ref _AdvPar2, value); }
         }
 
-        public DateTime _DateInj;
+        private DateTime _DateInj;
         public DateTime DateInj
         {
             get { return _DateInj; }
@@ -101,42 +101,42 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Phone), ref _Phone, value); }
         }
 
-        public DateTime _StatuteOfLimitations;
+        private DateTime _StatuteOfLimitations;
         public DateTime StatuteOfLimitations
         {
             get { return _StatuteOfLimitations; }
             set { SetPropertyValue<DateTime>(nameof(StatuteOfLimitations), ref _StatuteOfLimitations, value); }
         }
 
-        public DateTime _thi_day_f;
+        private DateTime _thi_day_f;
         public DateTime thi_day_f
         {
             get { return _thi_day_f; }
             set { SetPropertyValue<DateTime>(nameof(thi_day_f), ref _thi_day_f, value); }
         }
 
-        public DateTime _six_mo_f;
+        private DateTime _six_mo_f;
         public DateTime six_mo_f
         {
             get { return _six_mo_f; }
             set { SetPropertyValue<DateTime>(nameof(six_mo_f), ref _six_mo_f, value); }
         }
 
-        public DateTime _the_mo_f;
+        private DateTime _the_mo_f;
         public DateTime the_mo_f
         {
             get { return _the_mo_f; }
             set { SetPropertyValue<DateTime>(nameof(the_mo_f), ref _the_mo_f, value); }
         }
 
-        public DateTime _IntakeDate;
+        private DateTime _IntakeDate;
         public DateTime IntakeDate
         {
             get { return _IntakeDate; }
             set { SetPropertyValue<DateTime>(nameof(IntakeDate), ref _IntakeDate, value); }
         }
 
-        public DateTime _CloseDate;
+        private DateTime _CloseDate;
         public DateTime CloseDate
         {
             get { return _CloseDate; }
@@ -257,7 +257,7 @@ namespace CalvinoXAF.Module.BusinessObjects
         }
 
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

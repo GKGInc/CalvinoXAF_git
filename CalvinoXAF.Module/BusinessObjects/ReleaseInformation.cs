@@ -56,7 +56,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(DescriptionDate), ref _DescriptionDate, value); }
         }
 
-        public DateTime _ReleaseDate;
+        private DateTime _ReleaseDate;
         public DateTime ReleaseDate
         {
             get { return _ReleaseDate; }

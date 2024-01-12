@@ -112,7 +112,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(CoAtty), ref _CoAtty, value); }
         }
 
-        public DateTime _IntakeDate;
+        private DateTime _IntakeDate;
         public DateTime IntakeDate
         {
             get { return _IntakeDate; }
@@ -127,7 +127,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(RefBy), ref _RefBy, value); }
         }
 
-        public DateTime _StatuteOfLimitations;
+        private DateTime _StatuteOfLimitations;
         public DateTime StatuteOfLimitations
         {
             get { return _StatuteOfLimitations; }
@@ -142,14 +142,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(MaritalStatus), ref _MaritalStatus, value); }
         }
 
-        public DateTime _MaritalDate;
+        private DateTime _MaritalDate;
         public DateTime MaritalDate
         {
             get { return _MaritalDate; }
             set { SetPropertyValue<DateTime>(nameof(MaritalDate), ref _MaritalDate, value); }
         }
 
-        public DateTime _InjuryDate;
+        private DateTime _InjuryDate;
         public DateTime InjuryDate
         {
             get { return _InjuryDate; }
@@ -211,7 +211,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<int>(nameof(CommId), ref _CommId, value); }
         }
 
-        public DateTime _CaseClosed;
+        private DateTime _CaseClosed;
         public DateTime CaseClosed
         {
             get { return _CaseClosed; }
@@ -368,7 +368,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Insuit), ref _Insuit, value); }
         }
 
-        public DateTime _DateInsuit;
+        private DateTime _DateInsuit;
         public DateTime DateInsuit
         {
             get { return _DateInsuit; }
@@ -390,7 +390,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Comments), ref _Comments, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }

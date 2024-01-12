@@ -39,7 +39,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(GuidId), ref _GuidId, value); }
         }
 
-        public int _IntId;
+        private int _IntId;
         public int IntId
         {
             get { return _IntId; }

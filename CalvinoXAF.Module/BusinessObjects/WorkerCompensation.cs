@@ -104,7 +104,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Atty), ref _Atty, value); }
         }
 
-        public DateTime _IntakeDate;
+        private DateTime _IntakeDate;
         public DateTime IntakeDate
         {
             get { return _IntakeDate; }
@@ -119,14 +119,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(RefBy), ref _RefBy, value); }
         }
 
-        public DateTime _InjuryDate;
+        private DateTime _InjuryDate;
         public DateTime InjuryDate
         {
             get { return _InjuryDate; }
             set { SetPropertyValue<DateTime>(nameof(InjuryDate), ref _InjuryDate, value); }
         }
 
-        public DateTime _ic_d;
+        private DateTime _ic_d;
         public DateTime ic_d
         {
             get { return _ic_d; }
@@ -157,28 +157,28 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(Intrp), ref _Intrp, value); }
         }
 
-        public DateTime _AppointmentDate;
+        private DateTime _AppointmentDate;
         public DateTime AppointmentDate
         {
             get { return _AppointmentDate; }
             set { SetPropertyValue<DateTime>(nameof(AppointmentDate), ref _AppointmentDate, value); }
         }
 
-        public DateTime _StatuteOfLimitations;
+        private DateTime _StatuteOfLimitations;
         public DateTime StatuteOfLimitations
         {
             get { return _StatuteOfLimitations; }
             set { SetPropertyValue<DateTime>(nameof(StatuteOfLimitations), ref _StatuteOfLimitations, value); }
         }
 
-        public DateTime _stat_flash_d;
+        private DateTime _stat_flash_d;
         public DateTime stat_flash_d
         {
             get { return _stat_flash_d; }
             set { SetPropertyValue<DateTime>(nameof(stat_flash_d), ref _stat_flash_d, value); }
         }
 
-        public DateTime _pet_com_d;
+        private DateTime _pet_com_d;
         public DateTime pet_com_d
         {
             get { return _pet_com_d; }
@@ -248,6 +248,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _time_empl; }
             set { SetPropertyValue<string>(nameof(time_empl), ref _time_empl, value); }
         }
+
         private string _noti_empl;
         [Size(20)]
         public string noti_empl
@@ -255,6 +256,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _noti_empl; }
             set { SetPropertyValue<string>(nameof(noti_empl), ref _noti_empl, value); }
         }
+
         private string _noti_whom;
         [Size(60)]
         public string noti_whom
@@ -262,12 +264,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _noti_whom; }
             set { SetPropertyValue<string>(nameof(noti_whom), ref _noti_whom, value); }
         }
+
         private int _InsuranceKey;
         public int InsuranceKey
         {
             get { return _InsuranceKey; }
             set { SetPropertyValue<int>(nameof(InsuranceKey), ref _InsuranceKey, value); }
         }
+
         private string _Duties;
         [Size(SizeAttribute.Unlimited)]
         public string Duties
@@ -275,6 +279,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _Duties; }
             set { SetPropertyValue<string>(nameof(Duties), ref _Duties, value); }
         }
+
         private string _EmployeeTitle;
         [Size(35)]
         public string EmployeeTitle
@@ -282,24 +287,28 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _EmployeeTitle; }
             set { SetPropertyValue<string>(nameof(EmployeeTitle), ref _EmployeeTitle, value); }
         }
+
         private decimal _aww;
         public decimal aww
         {
             get { return _aww; }
             set { SetPropertyValue<decimal>(nameof(aww), ref _aww, value); }
         }
+
         private decimal _CompanyRate;
         public decimal CompanyRate
         {
             get { return _CompanyRate; }
             set { SetPropertyValue<decimal>(nameof(CompanyRate), ref _CompanyRate, value); }
         }
+
         private decimal _CompanyYear;
         public decimal CompanyYear
         {
             get { return _CompanyYear; }
             set { SetPropertyValue<decimal>(nameof(CompanyYear), ref _CompanyYear, value); }
         }
+
         private string _RtnWork;
         [Size(1)]
         public string RtnWork
@@ -307,6 +316,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _RtnWork; }
             set { SetPropertyValue<string>(nameof(RtnWork), ref _RtnWork, value); }
         }
+
         private string _NameCompany;
         [Size(35)]
         public string NameCompany
@@ -314,6 +324,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _NameCompany; }
             set { SetPropertyValue<string>(nameof(NameCompany), ref _NameCompany, value); }
         }
+
         private string _tdi_yn;
         [Size(1)]
         public string tdi_yn
@@ -321,6 +332,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _tdi_yn; }
             set { SetPropertyValue<string>(nameof(tdi_yn), ref _tdi_yn, value); }
         }
+
         private string _tdi_rcvd;
         [Size(60)]
         public string tdi_rcvd
@@ -328,6 +340,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _tdi_rcvd; }
             set { SetPropertyValue<string>(nameof(tdi_rcvd), ref _tdi_rcvd, value); }
         }
+
         private string _unemp_yn;
         [Size(1)]
         public string unemp_yn
@@ -335,6 +348,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _unemp_yn; }
             set { SetPropertyValue<string>(nameof(unemp_yn), ref _unemp_yn, value); }
         }
+
         private string _UnemploymentReceived;
         [Size(60)]
         public string UnemploymentReceived
@@ -342,6 +356,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _UnemploymentReceived; }
             set { SetPropertyValue<string>(nameof(UnemploymentReceived), ref _UnemploymentReceived, value); }
         }
+
         private string _welf_yn;
         [Size(1)]
         public string welf_yn
@@ -349,6 +364,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _welf_yn; }
             set { SetPropertyValue<string>(nameof(welf_yn), ref _welf_yn, value); }
         }
+
         private string _welf_rcvd;
         [Size(60)]
         public string welf_rcvd
@@ -356,6 +372,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _welf_rcvd; }
             set { SetPropertyValue<string>(nameof(welf_rcvd), ref _welf_rcvd, value); }
         }
+
         private string _tpc_rcvd;
         [Size(60)]
         public string tpc_rcvd
@@ -363,6 +380,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _tpc_rcvd; }
             set { SetPropertyValue<string>(nameof(tpc_rcvd), ref _tpc_rcvd, value); }
         }
+
         private string _suplwage;
         [Size(60)]
         public string suplwage
@@ -370,6 +388,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _suplwage; }
             set { SetPropertyValue<string>(nameof(suplwage), ref _suplwage, value); }
         }
+
         private string _t_diagno;
         [Size(SizeAttribute.Unlimited)]
         public string t_diagno
@@ -377,12 +396,14 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _t_diagno; }
             set { SetPropertyValue<string>(nameof(t_diagno), ref _t_diagno, value); }
         }
-        public DateTime _moa_file;
+
+        private DateTime _moa_file;
         public DateTime moa_file
         {
             get { return _moa_file; }
             set { SetPropertyValue<DateTime>(nameof(moa_file), ref _moa_file, value); }
         }
+
         private string _moa_ninj;
         [Size(SizeAttribute.Unlimited)]
         public string moa_ninj
@@ -391,7 +412,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<string>(nameof(moa_ninj), ref _moa_ninj, value); }
         }
 
-        public DateTime _CaseClosed;
+        private DateTime _CaseClosed;
         public DateTime CaseClosed
         {
             get { return _CaseClosed; }
@@ -405,7 +426,6 @@ namespace CalvinoXAF.Module.BusinessObjects
             get { return _ClosedFileNo; }
             set { SetPropertyValue<string>(nameof(ClosedFileNo), ref _ClosedFileNo, value); }
         }
-
 
         private string _Matter;
         [Size(8)]
@@ -437,7 +457,7 @@ namespace CalvinoXAF.Module.BusinessObjects
             set { SetPropertyValue<bool>(nameof(Filler), ref _Filler, value); }
         }
 
-        public DateTime _Timestamp;
+        private DateTime _Timestamp;
         public DateTime Timestamp
         {
             get { return _Timestamp; }
